@@ -7,6 +7,8 @@
 //
 
 import UIKit
+//snsに投稿するときに必要なフレームワーク
+import Accounts
 
 class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
@@ -83,15 +85,45 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     //編集した画像を保存するためのメソッド
     @IBAction func save(){
         
+        UIImageWriteToSavedPhotosAlbum(cameraImageView.image!, nil, nil, nil)
+        
     }
     
     //カメラロールにある画像を読み込む時のメソッド
     @IBAction func openAlbum(){
-        
+        //カメラが使えるかの確認
+        if UIImagePickerController.isSourceTypeAvailable(.camera) {
+            //カメラロールの画像を選択して画像を表示する
+            let picker = UIImagePickerController()
+            picker.sourceType = .photoLibrary
+            picker.delegate = self
+            picker.allowsEditing = true
+            
+            present(picker, animated: true, completion: nil)
+        }
     }
+        
+    
 
     //編集した画像をシェアする時のメソッド
     @IBAction func share(){
+        // 投稿するときに一緒にのせるコメント
+        let shareText = "写真加工できた！"
+        
+        //投稿する画像の選択
+        let shareImage = cameraImageView.image!
+        
+        //投稿するコメントと画像の準備
+        let activityItems: [Any] = [shareText, shareImage]
+        
+        let activityViewController = UIActivityViewController(activityItems: activityItems, applicationActivities: nil)
+        
+        let excludedActivityTypes = [UIActivityType.postToWeibo, .saveToCameraRoll, .print]
+        
+        activityViewController.excludedActivityTypes = excludedActivityTypes
+        
+        present(activityViewController, animated: true, completion: nil)
+        
         
     }
     

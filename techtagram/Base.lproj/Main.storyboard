@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SlQ-r1-dnz">
-                                <rect key="frame" x="16" y="485" width="91" height="59"/>
+                                <rect key="frame" x="19" y="407" width="91" height="59"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.18978200807592616" blue="0.087467142386606134" alpha="0.73349471830985913" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title=" Camera">
@@ -30,7 +30,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CwP-1N-V0f">
-                                <rect key="frame" x="205" y="562" width="91" height="59"/>
+                                <rect key="frame" x="208" y="484" width="91" height="59"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="1" blue="0.4481443006604664" alpha="0.73349471830000001" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Save">
@@ -41,7 +41,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jWY-He-iUf">
-                                <rect key="frame" x="68" y="562" width="91" height="59"/>
+                                <rect key="frame" x="71" y="484" width="91" height="59"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.44739344110583279" green="1" blue="0.035670827296108487" alpha="0.73349471830000001" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Share">
@@ -52,7 +52,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Vy-SJ-0u2">
-                                <rect key="frame" x="136" y="485" width="91" height="59"/>
+                                <rect key="frame" x="139" y="407" width="91" height="59"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.39679411395678554" blue="0.023142768997812091" alpha="0.73349471830000001" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Album">
@@ -63,7 +63,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Vx-Dc-w4L">
-                                <rect key="frame" x="262" y="485" width="91" height="59"/>
+                                <rect key="frame" x="265" y="407" width="91" height="59"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.99995026658620501" blue="0.10270072321553037" alpha="0.73349471830000001" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Fiter">
@@ -78,6 +78,14 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hana.png" translatesAutoresizingMaskIntoConstraints="NO" id="L8Y-PN-cFm">
+                                <rect key="frame" x="79" y="573" width="74" height="74"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hoshi.png" translatesAutoresizingMaskIntoConstraints="NO" id="7bS-6f-SzH">
+                                <rect key="frame" x="216" y="573" width="74" height="74"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -91,4 +99,8 @@
             <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="hana.png" width="300" height="300"/>
+        <image name="hoshi.png" width="300" height="300"/>
+    </resources>
 </document>

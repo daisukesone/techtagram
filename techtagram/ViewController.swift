@@ -19,6 +19,15 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     
     //画像加工するフィルターの宣言
     var filter: CIFilter!
+    
+    //スタンプの配列を生成
+    var imageNameArray: [String] = ["hana","hoshi"]
+    
+    //選択しているスタンプ画像の番号
+    
+    
+    //スタンプ画像が入るimageview
+    var stanpImageview: UIImage!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -102,7 +111,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
             present(picker, animated: true, completion: nil)
         }
     }
-        
+    
     
 
     //編集した画像をシェアする時のメソッド

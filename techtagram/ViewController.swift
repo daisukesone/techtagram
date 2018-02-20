@@ -24,10 +24,10 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     var imageNameArray: [String] = ["hana","hoshi"]
     
     //選択しているスタンプ画像の番号
-    
+    var imageIndex: Int = 0
     
     //スタンプ画像が入るimageview
-    var stanpImageview: UIImage!
+    var stampImageview: UIImageView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -135,6 +135,32 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         
         
     }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        
+        //タッチされた位置を取得
+        let touch: UITouch = touches.first!
+        let location: CGPoint = touch.location(in: self.view)
+        
+        //もしimageIndexが0出ないとき
+        if imageIndex != 0 {
+            //スタンプサイズを40pxの正方形に指定
+            stampImageview = UIImageView(frame: CGRect(x: 0, y: 0, width: 40, height: 40))
+            
+            //押されたスタンプの画像を設定
+            let image: UIImage = UIImage(named: imageNameArray[imageIndex-1])!
+            stampImageview.image = image
+            
+            //タッチされた位置に画像をおく
+            stampImageview.center = CGPoint(x: location.x, y: location.y)
+
+            //画像を表示
+            self.view.addSubview(stampImageview)
+            
+        }
+        
+    }
+    
     
     
 

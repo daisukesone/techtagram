@@ -78,14 +78,22 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hana.png" translatesAutoresizingMaskIntoConstraints="NO" id="L8Y-PN-cFm">
-                                <rect key="frame" x="79" y="573" width="74" height="74"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WtK-yb-7jg">
+                                <rect key="frame" x="79" y="577" width="75" height="75"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hoshi.png" translatesAutoresizingMaskIntoConstraints="NO" id="7bS-6f-SzH">
-                                <rect key="frame" x="216" y="573" width="74" height="74"/>
+                                <state key="normal" title="Button" image="hana.png"/>
+                                <connections>
+                                    <action selector="stamp1" destination="BYZ-38-t0r" eventType="touchUpInside" id="Oe4-Te-Xak"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="doC-qH-Ncq">
+                                <rect key="frame" x="224" y="577" width="75" height="75"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
+                                <state key="normal" title="Button" image="hoshi.png"/>
+                                <connections>
+                                    <action selector="stamp2" destination="BYZ-38-t0r" eventType="touchUpInside" id="j98-9T-aDP"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>

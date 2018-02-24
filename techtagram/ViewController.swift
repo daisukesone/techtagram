@@ -18,7 +18,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     var originalImage: UIImage!
     
     //画像加工するフィルターの宣言
-    var filter: CIFilter!
+    var filter: CIFilter!   
     
     //スタンプの配列を生成
     var imageNameArray: [String] = ["hana","hoshi"]
@@ -134,6 +134,15 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         present(activityViewController, animated: true, completion: nil)
         
         
+    }
+    
+    //スタンプを配置するメソッド
+    @IBAction func stamp1(){
+        imageIndex = 1
+    }
+    
+    @IBAction func stamp2(){
+        imageIndex = 2
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {

@@ -74,7 +74,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         let filterImage: CIImage = CIImage(image: originalImage)!
         
         //フィルターの設定
-        filter = CIFilter(name: "CIColerControls")!
+        filter = CIFilter(name: "CIColorControls")!
         filter.setValue(filterImage, forKey: kCIInputImageKey)
         
         //彩度の調整

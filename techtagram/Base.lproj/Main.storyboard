@@ -70,7 +70,7 @@
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
-                                    <action selector="applyFilter" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gvu-3j-XgL"/>
+                                    <action selector="applyFilter" destination="BYZ-38-t0r" eventType="touchUpInside" id="ctA-99-CuV"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RXx-uw-neA">
